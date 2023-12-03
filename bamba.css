@@ -1,0 +1,215 @@
+/* styles for display less than 996px */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body {
+    background-color: rgba(238, 238, 238, 0.387);
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.web_title {
+    padding-left: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.searcher {
+    padding-left: 10px;
+    width: 75%;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+
+#search_icon {
+    position: absolute;
+    left: 75%;
+    cursor: default;
+}
+
+.nav_text {
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.serve {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 1s;
+    
+}
+
+.serve:hover {
+    filter: drop-shadow(0px 0px 5px rgba(189, 241, 241, 0.24));
+    transform: scale(1.05);
+}
+
+.foo {
+    display: flex;
+    gap: 30px;
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(14, 3, 3, 0.904);
+    padding: 10px;
+    color: #fff;
+    font-size: .7pc;
+
+}
+
+.link_boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.foo_box {
+    width: 40%;
+    padding: 10px;
+
+}
+.navs, .comms {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navs > a {
+    color: #fff;
+    height: 35px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navs > a:hover {
+    background-color: rgba(231, 230, 230, 0.233);
+    cursor: pointer;
+}
+
+.comms p > a {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.comms > p {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.comms > p:hover {
+    background-color: rgba(231, 230, 230, 0.233);
+    cursor: pointer;
+}
+
+.copy {
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* STYLES FOR DISPLAYS greater THAN 900PX */
+
+@media screen and (min-width: 900px) {
+
+    .searcher {
+        width: 68%;
+    }
+    #search_icon {
+        position: absolute;
+        left: 55%;
+        cursor: pointer;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        height: 100vh;
+    
+    }
+
+    
+    
+    .serve {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        width: 400px;
+        border-radius: 8px;
+        cursor: pointer;
+        
+    }
+
+    .navs > a {
+        color: #fff;
+        height: 35px;
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comms > p {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        padding: 10px;
+    }
+}
+
+/* styles for displays over 500px */
+
+@media only screen and (min-width: 500px) {
+    #search_icon {
+        position: absolute;
+        left: 80%;
+        cursor: pointer;
+    }    
+
+    
+}
